@@ -12,6 +12,7 @@ namespace SinerjiOdev.Models
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { }
 
         public DbSet<Kullanıcı> Kullanıcılar { get; set; }
+        public DbSet<Rol> Roller { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
