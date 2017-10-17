@@ -1,0 +1,42 @@
+﻿@model SinerjiOdev.Models.Kullanıcı
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Kullanıcı</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciAdi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciAdi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Adi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Adi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SoyAdi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SoyAdi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sifre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sifre)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.KullanıcıId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
